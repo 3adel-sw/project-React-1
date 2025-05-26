@@ -1,0 +1,23 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.programs-header {
+  color: #fff;
+  display: flex;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  gap: 5rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.stroke-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
