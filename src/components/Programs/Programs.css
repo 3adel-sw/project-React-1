@@ -7,7 +7,8 @@
 .programs-header {
   color: #fff;
   display: flex;
-  font-size: 3rem;
+  flex-direction: row;
+  align-items: center;
   font-style: italic;
   font-weight: 700;
   gap: 5rem;
@@ -63,4 +64,19 @@
 .category:hover {
   background: var(--planCard);
   cursor: pointer;
+}
+
+/* Responsive media  */
+@media screen and (max-width: 768px) {
+  .programs-header {
+    flex-direction: column;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    gap: 5px;
+  }
+  .program-categories {
+    flex-direction: column;
+  }
 }

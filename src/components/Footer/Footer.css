@@ -1,0 +1,129 @@
+.footer-container {
+  position: relative;
+}
+
+.Footer-container > hr {
+  margin: 2rem 0 5rem 0;
+  border: 0;
+  opacity: 0.5;
+  color: white;
+}
+.footer {
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+.footer,
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.social-links > img {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+.logo-f > img {
+  width: 9rem;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 1000ms all;
+  opacity: 0.9;
+}
+.logo-f > img:hover {
+  transform: scale(1);
+  transition: 300ms all;
+  filter: brightness(0.9);
+  opacity: 1;
+}
+a img {
+  transition: 300ms all;
+  filter: brightness(0.9);
+  opacity: 0.9;
+  cursor: pointer;
+}
+a img:hover {
+  transform: scale(1.4);
+  transition: 300ms all;
+  filter: brightness(0.8);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Footer-container > :nth-child(3),
+.Footer-container > :nth-child(4) {
+  bottom: 0;
+  -webkit-filter: blur(200px);
+  filter: blur(200px);
+  height: 12rem;
+  width: 26rem;
+}
+.Footer-container > :nth-child(3),
+.Footer-container > :nth-child(4) {
+  bottom: 0;
+  -webkit-filter: blur(200px);
+  filter: blur(200px);
+  height: 12rem;
+  width: 26rem;
+}
+.Footer-container > :nth-child(4) {
+  background: #ff7300;
+  left: 15%;
+}
+
+.footer-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-text span {
+  color: white;
+  text-decoration: none;
+}
+.footer-text a:hover {
+  text-decoration: underline;
+}
+.footer-text a:visited {
+  color: white;
+}
+
+.blur-f-r {
+  background: #ff7300;
+  bottom: 0;
+  filter: blur(200px);
+  height: 16rem;
+  width: 35rem;
+  position: absolute;
+  left: 2%;
+}
+.blur-f-l {
+  bottom: 0;
+  filter: blur(200px);
+  height: 16rem;
+  width: 35rem;
+  background: red;
+  position: absolute;
+  right: 2%;
+}

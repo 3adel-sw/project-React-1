@@ -17,6 +17,8 @@
   flex-direction: column;
   gap: 6rem;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -35,4 +37,15 @@
   margin: 0.5rem;
   border: 0.5rem solid transparent;
   transition: 300ms all;
+}
+
+.blur {
+  background: rgba(253, 120, 43, 0.69);
+  border-radius: 50%;
+  -webkit-filter: blur(212px);
+  filter: blur(212px);
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  position: absolute;
+  z-index: -9;
 }
