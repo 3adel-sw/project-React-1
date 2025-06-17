@@ -112,3 +112,14 @@
   left: 0;
   top: 7rem;
 }
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .plans-container {
+    padding: 0 1rem;
+  }
+
+  .programs-header {
+    font-size: x-large;
+    gap: 2rem;
+  }
+}

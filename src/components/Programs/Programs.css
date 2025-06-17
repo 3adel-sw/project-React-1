@@ -7,8 +7,7 @@
 .programs-header {
   color: #fff;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  font-size: 3rem;
   font-style: italic;
   font-weight: 700;
   gap: 5rem;
@@ -69,14 +68,14 @@
 /* Responsive media  */
 @media screen and (max-width: 768px) {
   .programs-header {
-    flex-direction: column;
-    font-size: x-large;
     align-items: center;
+    font-size: x-large;
+    gap: 1rem;
     justify-content: center;
-    margin-top: 0;
-    gap: 5px;
+    margin-top: 2rem;
   }
-  .program-categories {
+  .program-categories,
+  .programs-header {
     flex-direction: column;
   }
 }

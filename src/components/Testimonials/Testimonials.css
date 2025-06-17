@@ -76,3 +76,47 @@
   cursor: pointer;
   width: 1.5rem;
 }
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .left-t > :first-child {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 1.8rem;
+    align-self: center;
+  }
+  .testimonials {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .left-t {
+    gap: 1rem;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: 2rem;
+  }
+  .right-t > :first-child,
+  .right-t > img {
+    width: 100%;
+  }
+  .arrows {
+    left: 1rem;
+    position: relative;
+    margin: 2rem;
+  }
+  .arrows img {
+    width: 1rem;
+  }
+  .right-t > :nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .right-t > img {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+}
