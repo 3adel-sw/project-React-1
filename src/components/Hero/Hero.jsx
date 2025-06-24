@@ -5,6 +5,7 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
+import NumberCounter from "number-counter";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       {/* Background blur effect */}
       <div className="blur hero-blur"></div>
 
@@ -51,15 +52,21 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+ 140</span>
+            <span>
+              <NumberCounter end={140} start={50} delay="4" preFix="+" />
+            </span>
             <span>expert coachs</span>
           </div>
           <div>
-            <span>+ 979</span>
+            <span>
+              <NumberCounter end={978} start={100} delay="4" preFix="+" />
+            </span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+ 50</span>
+            <span>
+              <NumberCounter end={50} start={0} delay="4" preFix="+" />
+            </span>
             <span> fitness programs</span>
           </div>
         </div>
@@ -81,7 +88,9 @@ const Hero = () => {
         >
           <img src={Heart} alt="" />
           <span>Heart Rate</span>
-          <span>116 bpm</span>
+          <span>
+            <NumberCounter end={116} start={1} delay="4" preFix="bpm" />
+          </span>
         </motion.div>
         {/* hero images */}
         <img src={hero_image} alt="" className="hero-image" />
@@ -103,7 +112,9 @@ const Hero = () => {
           <img src={Calories} alt="" />
           <div>
             <span>Calories burned</span>
-            <span>220 kcal</span>
+            <span>
+              <NumberCounter end={220} start={50} delay="4" preFix="kcal" />
+            </span>
           </div>
           <div></div>
         </motion.div>

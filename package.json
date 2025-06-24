@@ -10,9 +10,12 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.6",
     "framer-motion": "^12.16.0",
+    "number-counter": "^1.0.3",
     "react": "^19.1.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,3 +43,4 @@
     ]
   }
 }
+

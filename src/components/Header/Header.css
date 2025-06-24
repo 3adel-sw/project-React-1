@@ -38,3 +38,29 @@
   color: white;
   text-overflow: inherit;
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-menu {
+    /* display: none; */
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--appColor);
+  }
+  .hero-text {
+    font-size: 3rem;
+  }
+  .logo {
+    width: 5rem;
+    height: 4rem;
+    margin: 0 0.1rem;
+  }
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 1rem;
+    z-index: 1000;
+    background-color: var(--appColor);
+    /* width: 9%; */
+    top: 2rem;
+  }
+}
